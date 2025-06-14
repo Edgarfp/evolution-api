@@ -5,7 +5,8 @@
       "src": "evolution-api/package.json",
       "use": "@vercel/node",
       "config": {
-        "buildCommand": "cd evolution-api && npm install && npm run build"
+        "buildCommand": "cd evolution-api && npm install && npm run build",
+        "includeFiles": ["evolution-api/manager/dist/**"]
       }
     }
   ],
